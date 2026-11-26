@@ -27,10 +27,13 @@
       <p class="chat-bubble" id="room-prompt">De quel village venez-vous ?</p>
       <form class="room-form">
         <label class="visually-hidden" for="village">Nom de votre village</label>
-        <input id="village" name="village" type="search" list="village-list" placeholder="Saisissez votre village" autocomplete="off" maxlength="100" required>
-        <datalist id="village-list"></datalist>
+        <input id="village" name="village" type="search" placeholder="Saisissez votre village" autocomplete="off" maxlength="100" required>
         <button type="submit">Rechercher</button>
       </form>
+      <details class="village-picker">
+        <summary>Choisir dans la liste</summary>
+        <div class="room-choices" id="village-list"></div>
+      </details>
       <noscript>Activez JavaScript pour rechercher les ateliers de votre village.</noscript>
       <p class="visually-hidden" id="search-status" role="status"></p>
       <div id="room-answer"></div>

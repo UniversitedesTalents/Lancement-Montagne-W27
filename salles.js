@@ -21,11 +21,10 @@ const directory = villages.map(village => ({
   keys: [village.name, ...(aliases[village.name] ?? [])].map(normalize),
 }));
 
-for (const { village } of directory) {
-  const option = document.createElement('option');
-  option.value = village.name;
-  options.append(option);
-}
+const picker = document.querySelector('.village-picker');
+options.append(...villageButtons(villages));
+
+input.addEventListener('focus', () => { picker.open = true; });
 
 function element(tag, className, content) {
   const node = document.createElement(tag);
@@ -36,6 +35,7 @@ function element(tag, className, content) {
 
 function showVillage(village) {
   input.value = village.name;
+  picker.open = false;
   const result = resultTemplate.content.cloneNode(true);
   result.querySelector('#result-village').textContent = village.name;
   result.querySelector('.reference-room').textContent = village.room;
@@ -68,17 +68,21 @@ function showVillage(village) {
   status.textContent = village.name + ' · Salle de référence ' + village.room + ' · 8 ateliers trouvés.';
 }
 
-function showChoices(matches, message) {
-  const group = element('div', 'room-choices', '');
-  for (const match of matches) {
-    const button = element('button', '', match.name);
+function villageButtons(matches) {
+  return matches.map(village => {
+    const button = element('button', '', village.name);
     button.type = 'button';
     button.addEventListener('click', () => {
-      showVillage(match);
-      input.focus();
+      picker.querySelector('summary').focus();
+      showVillage(village);
     });
-    group.append(button);
-  }
+    return button;
+  });
+}
+
+function showChoices(matches, message) {
+  const group = element('div', 'room-choices', '');
+  group.append(...villageButtons(matches));
   answer.replaceChildren(element('p', 'chat-bubble', message), group);
   status.textContent = message;
 }
