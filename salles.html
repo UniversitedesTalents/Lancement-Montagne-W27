@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1e2346">
+  <meta name="description" content="Retrouvez vos salles et ateliers par village pour le Lancement Montagne W27 à La Rosière.">
+  <title>Trouver ma salle | Lancement Montagne W27</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="salles-data.js" defer></script>
+  <script src="salles.js" defer></script>
+</head>
+<body>
+  <header class="hero room-hero">
+    <img class="hero-photo" src="assets/la-rosiere.jpg" alt="" width="2048" height="1365" fetchpriority="high">
+    <div class="wrap hero-inner">
+      <p class="venue">Lancement Montagne W27 · Club Med La Rosière</p>
+      <h1>Trouver <span>ma salle</span></h1>
+    </div>
+  </header>
+  <main class="wrap room-main">
+    <nav class="site-nav" aria-label="Navigation du séminaire">
+      <a href="index.html">Programme</a>
+      <a href="salles.html" aria-current="page">Trouver ma salle</a>
+    </nav>
+    <div class="room-chat">
+      <p class="chat-bubble" id="room-prompt">De quel village venez-vous ?</p>
+      <form class="room-form">
+        <label class="visually-hidden" for="village">Nom de votre village</label>
+        <input id="village" name="village" type="search" list="village-list" placeholder="Saisissez votre village" autocomplete="off" maxlength="100" required>
+        <datalist id="village-list"></datalist>
+        <button type="submit">Rechercher</button>
+      </form>
+      <noscript>Activez JavaScript pour rechercher les ateliers de votre village.</noscript>
+      <p class="visually-hidden" id="search-status" role="status"></p>
+      <div id="room-answer"></div>
+    </div>
+    <p class="room-scope">Pour les ateliers par filière, les RDS 2 rejoignent la salle de leur filière.</p>
+  </main>
+  <footer><div class="wrap">Lancement Montagne W27 <span>Club Med La Rosière</span></div></footer>
+  <template id="room-result">
+    <section class="chat-result" aria-labelledby="result-village">
+      <div class="room-summary">
+        <h2 id="result-village"></h2>
+        <p>Salle de référence <strong class="reference-room"></strong></p>
+      </div>
+      <div class="room-days"></div>
+    </section>
+  </template>
+</body>
+</html>
