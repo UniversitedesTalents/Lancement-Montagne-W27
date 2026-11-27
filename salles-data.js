@@ -57,8 +57,8 @@ const villages = [
         "day": "Jeudi 3 décembre",
         "time": "10h15 – 11h45",
         "title": "Rétroplanning d'engagement",
-        "room": "Game Factory",
-        "sharedWith": "Arcs Panorama"
+        "room": "Petit Club 1",
+        "note": "Intervenante TBC · Anais Jégo ou Anne Claire Dumont."
       }
     ]
   },
@@ -121,7 +121,7 @@ const villages = [
         "time": "10h15 – 11h45",
         "title": "Rétroplanning d'engagement",
         "room": "Game Factory",
-        "sharedWith": "Peisey-Vallandry"
+        "note": "Intervenante TBC · Anais Jégo ou Anne Claire Dumont."
       }
     ]
   },
@@ -1530,6 +1530,22 @@ const speakers = [
         "time": "15h15 – 16h45",
         "room": "Petit Club 1",
         "audience": "Peisey-Vallandry"
+      },
+      {
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "title": "Rétroplanning d'engagement",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Intervenante TBC · Anais Jégo ou Anne Claire Dumont."
+      },
+      {
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "title": "Rétroplanning d'engagement",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Intervenante TBC · Anais Jégo ou Anne Claire Dumont."
       }
     ]
   },
@@ -2249,7 +2265,7 @@ const speakers = [
     ]
   },
   {
-    "name": "Anais Jego",
+    "name": "Anais Jégo",
     "aliases": [],
     "sessions": [
       {
@@ -2315,6 +2331,22 @@ const speakers = [
         "room": "Petit Club 1",
         "audience": "Peisey-Vallandry",
         "note": "Participation à cette rotation à confirmer."
+      },
+      {
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "title": "Rétroplanning d'engagement",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Intervenante TBC · Anais Jégo ou Anne Claire Dumont."
+      },
+      {
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "title": "Rétroplanning d'engagement",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Intervenante TBC · Anais Jégo ou Anne Claire Dumont."
       }
     ]
   }
