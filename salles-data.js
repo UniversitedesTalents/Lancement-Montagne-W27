@@ -2319,3 +2319,215 @@ const speakers = [
     ]
   }
 ];
+
+const filieres = [
+  {
+    "name": "F&B",
+    "sessions": [
+      {
+        "title": "B1 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1"
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Petit Club 1"
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1"
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1"
+      }
+    ]
+  },
+  {
+    "name": "RH",
+    "sessions": [
+      {
+        "title": "B1 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée"
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée"
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée"
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée"
+      }
+    ]
+  },
+  {
+    "name": "Ex Co",
+    "sessions": [
+      {
+        "title": "B1 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory",
+        "note": "Atelier commun avec la filière RDM."
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory",
+        "note": "Atelier commun avec la filière RDM."
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory",
+        "note": "Atelier commun avec la filière RDM."
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques Ex Co",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Art Studio – 5ème"
+      }
+    ]
+  },
+  {
+    "name": "RDM",
+    "sessions": [
+      {
+        "title": "B1 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory",
+        "note": "Atelier commun avec la filière Ex Co."
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory",
+        "note": "Atelier commun avec la filière Ex Co."
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory",
+        "note": "Atelier commun avec la filière Ex Co."
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques RDM",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Passworld"
+      }
+    ]
+  },
+  {
+    "name": "LEM",
+    "sessions": [
+      {
+        "title": "B1 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball"
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Restaurant - côté MC/ Snowball"
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball"
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball"
+      }
+    ]
+  },
+  {
+    "name": "HSE",
+    "sessions": [
+      {
+        "title": "B1 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy"
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Music Academy"
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy"
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy"
+      }
+    ]
+  },
+  {
+    "name": "RT",
+    "sessions": [
+      {
+        "title": "B1 · Formation Légionelle RT",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Salle Fitness Yoga Studio"
+      },
+      {
+        "title": "B2 · Atelier filière",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio"
+      },
+      {
+        "title": "B3 · Atelier filière",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salle Fitness Yoga Studio"
+      },
+      {
+        "title": "B4 · Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salle Fitness Yoga Studio"
+      }
+    ]
+  }
+];

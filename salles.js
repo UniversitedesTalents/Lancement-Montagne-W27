@@ -25,12 +25,17 @@ const directory = villages.map(village => ({
     const words = name.split(/\s+/);
     return [words.at(-1), ...words.slice(0, -1)].join(' ');
   })].map(normalize),
+})), filieres.map(profile => ({
+  profile,
+  keys: [profile.name].map(normalize),
 })));
 
 const picker = document.querySelector('.village-picker');
 const speakerPicker = document.querySelector('.speaker-picker');
+const filierePicker = document.querySelector('.filiere-picker');
 const sortedSpeakers = [...speakers].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
 options.append(...choiceButtons(villages, picker));
+document.querySelector('#filiere-list').append(...choiceButtons(filieres, filierePicker));
 document.querySelector('#speaker-list').append(...choiceButtons(sortedSpeakers, speakerPicker));
 
 input.addEventListener('focus', () => { picker.open = true; });
@@ -46,6 +51,7 @@ function showProfile(profile) {
   input.value = profile.name;
   picker.open = false;
   speakerPicker.open = false;
+  filierePicker.open = false;
   const result = resultTemplate.content.cloneNode(true);
   result.querySelector('#result-village').textContent = profile.name;
   const reference = result.querySelector('.room-reference');
@@ -108,7 +114,7 @@ function showChoices(matches, message) {
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-  const query = normalize(input.value);
+  const query = normalize(input.value.replace(/^\s*(?:je suis (?:un|une)\s+|fili[eè]re\s+)/i, ''));
   const exact = directory.find(entry => entry.keys.includes(query));
   if (exact) {
     showProfile(exact.profile);
@@ -122,6 +128,6 @@ form.addEventListener('submit', event => {
   } else if (matches.length > 1) {
     showChoices(matches, 'Plusieurs résultats correspondent. Choisissez dans la liste.');
   } else {
-    showChoices(villages, 'Aucun résultat. Vérifiez le nom saisi ou choisissez un village dans la liste.');
+    showChoices([...villages, ...filieres], 'Aucun résultat. Vérifiez votre recherche ou choisissez un village ou une filière.');
   }
 });

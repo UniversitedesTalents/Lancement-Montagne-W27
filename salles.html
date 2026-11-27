@@ -24,15 +24,19 @@
       <a href="salles.html" aria-current="page">Trouver ma salle</a>
     </nav>
     <div class="room-chat">
-      <p class="chat-bubble" id="room-prompt">Recherchez votre village ou le nom d’un intervenant.</p>
+      <p class="chat-bubble" id="room-prompt">Recherchez votre village, votre filière ou le nom d’un intervenant.</p>
       <form class="room-form">
-        <label class="visually-hidden" for="village">Village ou nom de l’intervenant</label>
-        <input id="village" name="village" type="search" placeholder="Village ou nom de l’intervenant" autocomplete="off" maxlength="100" required>
+        <label class="visually-hidden" for="village">Village, filière ou intervenant</label>
+        <input id="village" name="village" type="search" placeholder="Village, filière ou intervenant" autocomplete="off" maxlength="100" required>
         <button type="submit">Rechercher</button>
       </form>
       <details class="village-picker">
         <summary>Choisir un village dans la liste</summary>
         <div class="room-choices" id="village-list"></div>
+      </details>
+      <details class="village-picker filiere-picker">
+        <summary>Choisir une filière dans la liste</summary>
+        <div class="room-choices" id="filiere-list"></div>
       </details>
       <details class="village-picker speaker-picker">
         <summary>Choisir un intervenant dans la liste</summary>
@@ -42,7 +46,7 @@
       <p class="visually-hidden" id="search-status" role="status"></p>
       <div id="room-answer"></div>
     </div>
-    <p class="room-scope">Pour les ateliers par filière, les RDS 2 rejoignent la salle de leur filière.</p>
+    <p class="room-scope">Les RDS 2 peuvent consulter les salles des blocs B1 à B4 en sélectionnant leur filière.</p>
   </main>
   <footer><div class="wrap">Lancement Montagne W27 <span>Club Med La Rosière</span></div></footer>
   <template id="room-result">
