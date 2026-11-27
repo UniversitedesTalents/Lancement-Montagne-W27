@@ -17,12 +17,21 @@ const aliases = {
   'Pragelato-Sestriere': ['Pragelato Vialattea'],
 };
 const directory = villages.map(village => ({
-  village,
+  profile: village,
   keys: [village.name, ...(aliases[village.name] ?? [])].map(normalize),
-}));
+})).concat(speakers.map(speaker => ({
+  profile: speaker,
+  keys: [speaker.name, ...speaker.aliases, ...[speaker.name, ...speaker.aliases].map(name => {
+    const words = name.split(/\s+/);
+    return [words.at(-1), ...words.slice(0, -1)].join(' ');
+  })].map(normalize),
+})));
 
 const picker = document.querySelector('.village-picker');
-options.append(...villageButtons(villages));
+const speakerPicker = document.querySelector('.speaker-picker');
+const sortedSpeakers = [...speakers].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+options.append(...choiceButtons(villages, picker));
+document.querySelector('#speaker-list').append(...choiceButtons(sortedSpeakers, speakerPicker));
 
 input.addEventListener('focus', () => { picker.open = true; });
 
@@ -33,17 +42,20 @@ function element(tag, className, content) {
   return node;
 }
 
-function showVillage(village) {
-  input.value = village.name;
+function showProfile(profile) {
+  input.value = profile.name;
   picker.open = false;
+  speakerPicker.open = false;
   const result = resultTemplate.content.cloneNode(true);
-  result.querySelector('#result-village').textContent = village.name;
-  result.querySelector('.reference-room').textContent = village.room;
+  result.querySelector('#result-village').textContent = profile.name;
+  const reference = result.querySelector('.room-reference');
+  if (profile.room) reference.querySelector('.reference-room').textContent = profile.room;
+  else reference.hidden = true;
   const days = result.querySelector('.room-days');
   let currentDay;
   let list;
 
-  for (const session of village.sessions) {
+  for (const session of profile.sessions) {
     if (session.day !== currentDay) {
       currentDay = session.day;
       days.append(element('h3', 'room-day', currentDay));
@@ -53,28 +65,35 @@ function showVillage(village) {
     const row = element('li', 'room-session', '');
     const details = element('div', 'room-details', '');
     details.append(element('h4', 'room-workshop', session.title));
-    const change = session.room !== village.room;
+    const change = profile.room && session.room !== profile.room;
     const room = element('p', change ? 'session-room changed-room' : 'session-room',
       change ? 'Changement de salle · ' + session.room : session.room);
     details.append(room);
     if (session.sharedWith) {
       details.append(element('p', 'shared-workshop', 'Atelier partagé avec ' + session.sharedWith));
     }
+    if (session.audience) details.append(element('p', 'shared-workshop', session.audience));
+    if (session.note) details.append(element('p', 'session-note', session.note));
     row.append(element('span', 'session-time', session.time), details);
     list.append(row);
   }
 
+  if (!profile.sessions.length) {
+    days.append(element('p', 'session-note', 'Aucun créneau nominatif renseigné dans le planning.'));
+  }
   answer.replaceChildren(result);
-  status.textContent = village.name + ' · Salle de référence ' + village.room + ' · 8 ateliers trouvés.';
+  status.textContent = profile.name + ' · ' + (
+    profile.sessions.length ? profile.sessions.length + ' créneau(x) trouvé(s).' : 'Aucun créneau nominatif renseigné.'
+  );
 }
 
-function villageButtons(matches) {
-  return matches.map(village => {
-    const button = element('button', '', village.name);
+function choiceButtons(matches, disclosure = picker) {
+  return matches.map(profile => {
+    const button = element('button', '', profile.name);
     button.type = 'button';
     button.addEventListener('click', () => {
-      picker.querySelector('summary').focus();
-      showVillage(village);
+      disclosure.querySelector('summary').focus();
+      showProfile(profile);
     });
     return button;
   });
@@ -82,7 +101,7 @@ function villageButtons(matches) {
 
 function showChoices(matches, message) {
   const group = element('div', 'room-choices', '');
-  group.append(...villageButtons(matches));
+  group.append(...choiceButtons(matches));
   answer.replaceChildren(element('p', 'chat-bubble', message), group);
   status.textContent = message;
 }
@@ -92,17 +111,17 @@ form.addEventListener('submit', event => {
   const query = normalize(input.value);
   const exact = directory.find(entry => entry.keys.includes(query));
   if (exact) {
-    showVillage(exact.village);
+    showProfile(exact.profile);
     return;
   }
   const matches = query.length > 1
-    ? directory.filter(entry => entry.keys.some(key => key.includes(query))).map(entry => entry.village)
+    ? directory.filter(entry => entry.keys.some(key => key.includes(query))).map(entry => entry.profile)
     : [];
   if (matches.length === 1) {
-    showVillage(matches[0]);
+    showProfile(matches[0]);
   } else if (matches.length > 1) {
-    showChoices(matches, 'Plusieurs villages correspondent. Choisissez le vôtre.');
+    showChoices(matches, 'Plusieurs résultats correspondent. Choisissez dans la liste.');
   } else {
-    showChoices(villages, 'Village introuvable. Vérifiez le nom ou choisissez dans la liste.');
+    showChoices(villages, 'Aucun résultat. Vérifiez le nom saisi ou choisissez un village dans la liste.');
   }
 });

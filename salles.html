@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1e2346">
-  <meta name="description" content="Retrouvez vos salles et ateliers par village pour le Lancement Montagne W27 à La Rosière.">
+  <meta name="description" content="Retrouvez vos salles et ateliers par village ou par intervenant pour le Lancement Montagne W27 à La Rosière.">
   <title>Trouver ma salle | Lancement Montagne W27</title>
   <link rel="stylesheet" href="style.css">
   <script src="salles-data.js" defer></script>
@@ -24,17 +24,21 @@
       <a href="salles.html" aria-current="page">Trouver ma salle</a>
     </nav>
     <div class="room-chat">
-      <p class="chat-bubble" id="room-prompt">De quel village venez-vous ?</p>
+      <p class="chat-bubble" id="room-prompt">Recherchez votre village ou le nom d’un intervenant.</p>
       <form class="room-form">
-        <label class="visually-hidden" for="village">Nom de votre village</label>
-        <input id="village" name="village" type="search" placeholder="Saisissez votre village" autocomplete="off" maxlength="100" required>
+        <label class="visually-hidden" for="village">Village ou nom de l’intervenant</label>
+        <input id="village" name="village" type="search" placeholder="Village ou nom de l’intervenant" autocomplete="off" maxlength="100" required>
         <button type="submit">Rechercher</button>
       </form>
       <details class="village-picker">
-        <summary>Choisir dans la liste</summary>
+        <summary>Choisir un village dans la liste</summary>
         <div class="room-choices" id="village-list"></div>
       </details>
-      <noscript>Activez JavaScript pour rechercher les ateliers de votre village.</noscript>
+      <details class="village-picker speaker-picker">
+        <summary>Choisir un intervenant dans la liste</summary>
+        <div class="room-choices" id="speaker-list"></div>
+      </details>
+      <noscript>Activez JavaScript pour rechercher vos ateliers.</noscript>
       <p class="visually-hidden" id="search-status" role="status"></p>
       <div id="room-answer"></div>
     </div>
@@ -45,7 +49,7 @@
     <section class="chat-result" aria-labelledby="result-village">
       <div class="room-summary">
         <h2 id="result-village"></h2>
-        <p>Salle de référence <strong class="reference-room"></strong></p>
+        <p class="room-reference">Salle de référence <strong class="reference-room"></strong></p>
       </div>
       <div class="room-days"></div>
     </section>

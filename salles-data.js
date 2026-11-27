@@ -71,8 +71,7 @@ const villages = [
         "day": "Lundi 30 novembre",
         "time": "13h30 – 15h",
         "title": "Time Management : mise en pratique",
-        "room": "Game Factory",
-        "sharedWith": "La Rosière"
+        "room": "Game Factory"
       },
       {
         "number": 2,
@@ -135,8 +134,7 @@ const villages = [
         "day": "Lundi 30 novembre",
         "time": "13h30 – 15h",
         "title": "Time Management : mise en pratique",
-        "room": "Game Factory",
-        "sharedWith": "Arcs Panorama"
+        "room": "Salon Cheminée"
       },
       {
         "number": 2,
@@ -260,14 +258,14 @@ const villages = [
         "day": "Lundi 30 novembre",
         "time": "13h30 – 15h",
         "title": "Je mets les risques sous contrôle – Part 1",
-        "room": "Salle Fitness Yoga Studio"
+        "room": "Lounge Exclusive Collection"
       },
       {
         "number": 2,
         "day": "Lundi 30 novembre",
         "time": "15h15 – 16h45",
         "title": "Je mets les risques sous contrôle – Part 2",
-        "room": "Salle Fitness Yoga Studio"
+        "room": "Lounge Exclusive Collection"
       },
       {
         "number": 3,
@@ -496,6 +494,1827 @@ const villages = [
         "time": "10h15 – 11h45",
         "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
         "room": "Art Studio"
+      }
+    ]
+  }
+];
+
+const speakers = [
+  {
+    "name": "Selda Tok",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      }
+    ]
+  },
+  {
+    "name": "Victoria Mottini",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      }
+    ]
+  },
+  {
+    "name": "Sophie Parisot Bouelam",
+    "aliases": [
+      "Sophie P.B",
+      "Sophie Parisot Bouelem"
+    ],
+    "sessions": [
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Atelier filière · RH",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée",
+        "audience": "Filière RH"
+      },
+      {
+        "title": "Atelier filière · RH",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "Filière RH"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Atelier filière · RH",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée",
+        "audience": "Filière RH"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Q&A de l'atelier village RH",
+        "day": "Mercredi 2 décembre",
+        "time": "18h – 19h30",
+        "room": "Salle à confirmer",
+        "audience": "Forum",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée",
+        "audience": "Filière RH"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      }
+    ]
+  },
+  {
+    "name": "Caroline Basset",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Le bien-être de nos G.O/G.E, booster de performance de nos équipes et de satisfaction de nos clients",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      }
+    ]
+  },
+  {
+    "name": "Thibault Vasseur",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "La culture des Standards",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      }
+    ]
+  },
+  {
+    "name": "Fanny Texier",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "La culture des Standards",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "La culture des Standards",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      }
+    ]
+  },
+  {
+    "name": "Laurie Sousleys",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Standards – Prise en main d'Operation Hub",
+        "day": "Lundi 30 novembre",
+        "time": "18h – 19h30",
+        "room": "Lobby · côté maquette",
+        "audience": "Forum"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Standards – Prise en main d'Operation Hub",
+        "day": "Mardi 1er décembre",
+        "time": "18h – 19h30",
+        "room": "Lobby · côté maquette",
+        "audience": "Forum"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      }
+    ]
+  },
+  {
+    "name": "Nicolas Pontet",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      }
+    ]
+  },
+  {
+    "name": "Guillaume Radius",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      }
+    ]
+  },
+  {
+    "name": "Constance Tardy",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Responsabilité pénale du manager / conséquences des délégations de pouvoirs",
+        "day": "Mardi 1er décembre",
+        "time": "18h – 19h30",
+        "room": "Salle à confirmer",
+        "audience": "Forum"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Responsabilité pénale du manager / conséquences des délégations de pouvoirs",
+        "day": "Mercredi 2 décembre",
+        "time": "18h – 19h30",
+        "room": "Salle à confirmer",
+        "audience": "Forum"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      }
+    ]
+  },
+  {
+    "name": "Anne-Laure Cadoux",
+    "aliases": [
+      "Anne Laure C"
+    ],
+    "sessions": [
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Atelier filière · HSE",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy",
+        "audience": "Filière HSE"
+      },
+      {
+        "title": "Atelier filière · HSE",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Music Academy",
+        "audience": "Filière HSE"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Atelier filière · HSE",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy",
+        "audience": "Filière HSE"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy",
+        "audience": "Filière HSE"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      }
+    ]
+  },
+  {
+    "name": "Alexandre Blanchard",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama"
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière"
+      }
+    ]
+  },
+  {
+    "name": "Anne Claire Dumont",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "C1 en parallèle. Affectation nominative à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "C1 en parallèle. Affectation nominative à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100"
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier"
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif"
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Music Academy",
+        "audience": "Valmorel"
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere"
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry"
+      }
+    ]
+  },
+  {
+    "name": "Vincent Archer",
+    "aliases": [],
+    "sessions": []
+  },
+  {
+    "name": "Etienne Polin",
+    "aliases": [],
+    "sessions": []
+  },
+  {
+    "name": "Eléonore Deniaud",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Point DO et chefs de village",
+        "day": "Lundi 30 novembre",
+        "time": "7h30 – 9h30",
+        "room": "Salle à confirmer"
+      }
+    ]
+  },
+  {
+    "name": "Aude Grienenberger",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      }
+    ]
+  },
+  {
+    "name": "Julien Houssat",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je pilote mon business avec l'expertise de mon RFS & de mon RDVL",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      }
+    ]
+  },
+  {
+    "name": "Alexandre B.",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Internationalisation – Focus UK – Gestion des minorités",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      }
+    ]
+  },
+  {
+    "name": "Bruno Rocher",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Lounge Exclusive Collection",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 1",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à confirmer."
+      },
+      {
+        "title": "Je mets les risques sous contrôle – Part 2",
+        "day": "Jeudi 3 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "Participation à confirmer."
+      }
+    ]
+  },
+  {
+    "name": "Solenn B",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Atelier filière · F&B",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1",
+        "audience": "Filière F&B"
+      },
+      {
+        "title": "Atelier filière · F&B",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Petit Club 1",
+        "audience": "Filière F&B"
+      },
+      {
+        "title": "Atelier filière · F&B",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1",
+        "audience": "Filière F&B"
+      },
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1",
+        "audience": "Filière F&B"
+      }
+    ]
+  },
+  {
+    "name": "Kevin D",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Atelier filière · Ex Co",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory · commun avec RDM",
+        "audience": "Filière Ex Co"
+      },
+      {
+        "title": "Atelier filière · Ex Co",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory · commun avec RDM",
+        "audience": "Filière Ex Co"
+      },
+      {
+        "title": "Atelier filière · Ex Co",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory · commun avec RDM",
+        "audience": "Filière Ex Co"
+      },
+      {
+        "title": "Partage des bonnes pratiques Ex Co",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Art Studio – 5ème",
+        "audience": "Filière Ex Co"
+      }
+    ]
+  },
+  {
+    "name": "Gilles B",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Atelier filière · RDM",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory · commun avec Ex Co",
+        "audience": "Filière RDM"
+      },
+      {
+        "title": "Atelier filière · RDM",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Game Factory · commun avec Ex Co",
+        "audience": "Filière RDM"
+      },
+      {
+        "title": "Atelier filière · RDM",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Game Factory · commun avec Ex Co",
+        "audience": "Filière RDM"
+      },
+      {
+        "title": "Partage des bonnes pratiques RDM",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Passworld",
+        "audience": "Filière RDM"
+      }
+    ]
+  },
+  {
+    "name": "Jean Marie F",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Atelier filière · LEM",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Filière LEM"
+      },
+      {
+        "title": "Atelier filière · LEM",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Filière LEM"
+      },
+      {
+        "title": "Atelier filière · LEM",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Filière LEM"
+      },
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Filière LEM"
+      }
+    ]
+  },
+  {
+    "name": "Rachid B",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Formation Légionelle RT",
+        "day": "Mardi 1er décembre",
+        "time": "8h30 – 10h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Filière RT"
+      },
+      {
+        "title": "Atelier filière · RT",
+        "day": "Mardi 1er décembre",
+        "time": "10h15 – 11h45",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Filière RT"
+      },
+      {
+        "title": "Atelier filière · RT",
+        "day": "Mercredi 2 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Filière RT"
+      },
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Filière RT"
+      }
+    ]
+  },
+  {
+    "name": "Florence Herman",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Standards – Prise en main d'Operation Hub",
+        "day": "Lundi 30 novembre",
+        "time": "18h – 19h30",
+        "room": "Lobby · côté maquette",
+        "audience": "Forum"
+      },
+      {
+        "title": "Standards – Prise en main d'Operation Hub",
+        "day": "Mardi 1er décembre",
+        "time": "18h – 19h30",
+        "room": "Lobby · côté maquette",
+        "audience": "Forum"
+      }
+    ]
+  },
+  {
+    "name": "Thierry Mazouat",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Présentation du produit montagne",
+        "day": "Lundi 30 novembre",
+        "time": "18h – 19h30",
+        "room": "Salle à confirmer",
+        "audience": "Forum"
+      }
+    ]
+  },
+  {
+    "name": "Aurore Suain",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Responsabilité pénale du manager / conséquences des délégations de pouvoirs",
+        "day": "Mardi 1er décembre",
+        "time": "18h – 19h30",
+        "room": "Salle à confirmer",
+        "audience": "Forum"
+      },
+      {
+        "title": "Responsabilité pénale du manager / conséquences des délégations de pouvoirs",
+        "day": "Mercredi 2 décembre",
+        "time": "18h – 19h30",
+        "room": "Salle à confirmer",
+        "audience": "Forum"
+      }
+    ]
+  },
+  {
+    "name": "Marco · CDV sponsor F&B",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1",
+        "audience": "Filière F&B",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Hugo · CDV sponsor F&B",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Petit Club 1",
+        "audience": "Filière F&B",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Pierre-Jean · CDV sponsor RH",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Salon Cheminée",
+        "audience": "Filière RH",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Soufiane · CDV sponsor Ex Co",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques Ex Co",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Art Studio – 5ème",
+        "audience": "Filière Ex Co",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Gianni · CDV sponsor RDM",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques RDM",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Passworld",
+        "audience": "Filière RDM",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Vincenzo · CDV sponsor RDM",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques RDM",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Passworld",
+        "audience": "Filière RDM",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Boris · CDV sponsor LEM",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Filière LEM",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Antonio · CDV sponsor LEM",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Filière LEM",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Alexandre · CDV sponsor HSE",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Partage des bonnes pratiques",
+        "day": "Jeudi 3 décembre",
+        "time": "8h30 – 10h",
+        "room": "Music Academy",
+        "audience": "Filière HSE",
+        "note": "Nom de famille non renseigné dans le planning."
+      }
+    ]
+  },
+  {
+    "name": "Anais Jego",
+    "aliases": [],
+    "sessions": [
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Game Factory",
+        "audience": "Arcs Panorama",
+        "note": "C1 en parallèle. Affectation nominative à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Lundi 30 novembre",
+        "time": "13h30 – 15h",
+        "room": "Salon Cheminée",
+        "audience": "La Rosière",
+        "note": "C1 en parallèle. Affectation nominative à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Lundi 30 novembre",
+        "time": "15h15 – 16h45",
+        "room": "Passworld",
+        "audience": "La Plagne 2100",
+        "note": "Participation à cette rotation à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mardi 1er décembre",
+        "time": "13h30 – 15h",
+        "room": "Salle Fitness Yoga Studio",
+        "audience": "Serre-Chevalier",
+        "note": "Participation à cette rotation à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mardi 1er décembre",
+        "time": "15h15 – 16h45",
+        "room": "Restaurant - côté MC/ Snowball",
+        "audience": "Grand Massif",
+        "note": "Participation à cette rotation à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mercredi 2 décembre",
+        "time": "10h15 – 11h45",
+        "room": "Music Academy",
+        "audience": "Valmorel",
+        "note": "Participation à cette rotation à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mercredi 2 décembre",
+        "time": "13h30 – 15h",
+        "room": "Art Studio",
+        "audience": "Pragelato-Sestriere",
+        "note": "Participation à cette rotation à confirmer."
+      },
+      {
+        "title": "Time Management : mise en pratique",
+        "day": "Mercredi 2 décembre",
+        "time": "15h15 – 16h45",
+        "room": "Petit Club 1",
+        "audience": "Peisey-Vallandry",
+        "note": "Participation à cette rotation à confirmer."
       }
     ]
   }

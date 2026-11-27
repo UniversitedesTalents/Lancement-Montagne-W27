@@ -217,3 +217,5 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   cursor: pointer;
 }
 .village-picker summary:focus-visible { outline: 2px solid var(--yellow); outline-offset: 2px; }
+
+.session-note { margin-top: .3rem; color: var(--yellow); font-size: .9rem; }
